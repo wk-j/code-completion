@@ -1,5 +1,6 @@
 ## Commands
 
 ```
-jq ".openedPathsList.workspaces" ~/Library/Application\ Support/Code/storage.json
+brew install jq
+jq -r ".openedPathsList.workspaces | .[]" ~/Library/Application\ Support/Code/storage.json
 ```
